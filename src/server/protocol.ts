@@ -941,7 +941,7 @@ namespace ts.server.protocol {
         /**
          * Script kind of the file
          */
-        scriptKind?: ScriptKindName | ts.ScriptKind;
+        scriptKind?: ScriptKindName | ScriptKind;
         /**
          * Whether file has mixed content (i.e. .cshtml file that combines html markup with C#/JavaScript)
          */
@@ -1011,7 +1011,7 @@ namespace ts.server.protocol {
         /**
          * Current set of compiler options for project
          */
-        options: ts.CompilerOptions;
+        options: CompilerOptions;
 
         /**
          * true if project language service is disabled
@@ -1083,7 +1083,7 @@ namespace ts.server.protocol {
         /**
          * List of changes that should be applied to known open file
          */
-        changes: ts.TextChange[];
+        changes: TextChange[];
     }
 
 
